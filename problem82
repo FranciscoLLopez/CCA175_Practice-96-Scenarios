@@ -19,4 +19,3 @@ z: org.apache.spark.rdd.RDD[Int] = ParallelCollectionRDD[2] at parallelize at <c
 
 scala> def myfunc(index: Int, iter: Iterator[(Int)]): Iterator[String] = {iter.toList.map(x => "[partID:" + index + ", val: " + x + "]").iterator}
 myfunc: (index: Int, iter: Iterator[Int])Iterator[String]
-
